@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kanchit Kinsrisuk Game Development Projects: Piano, Shrine Showdown, Bubble KO, Mr. Stoker, Solo Horror Project, กุ้งเผาอยุธยา">
+    <meta name="keywords" content="Game Project, Unity, Unreal Engine, Horror Game, 3D Modeling, Online Multiplayer, Split-Screen, VR Game, Solo Developer, Mobile Game">
+    <meta name="author" content="Kanchit Kinsrisuk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="game-development.css">
+    <title>Kanchit Kinsrisuk | Game Projects</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Kanchit Kinsrisuk</h1>
+            <p class="subtitle">Game Development Projects</p>
+            <nav>
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> HOME</a>
+                <a href="index.html#about" class="nav-link"><i class="fas fa-user"></i> ABOUT ME</a>
+                <a href="game-development.html" class="nav-link active"><i class="fas fa-gamepad"></i> GAME PROJECT</a>
+                <a href="OtherWorks.html" class="nav-link"><i class="fas fa-palette"></i> OTHER WORKS</a>
+                <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> EXPERIENCE</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <section id="game-projects" class="section-container">
+            <h2>Game Development Portfolio</h2>
+
+            <div id="piano" class="game-project-card" onmouseover="loadGif(this)" onmouseleave="unloadGif(this)">
+                <div class="project-media-left">
+                    <img src="Featured Projects/Piano.png" alt="Piano Cover Image" class="project-static-image" loading="lazy">
+                    <img data-gif-src="Featured Projects/Piano.gif" alt="Piano Game Highlight GIF" class="project-gif-image" loading="lazy">
+                </div>
+                <div class="project-details-right">
+                    <h3>Piano (Horror 2D Game)</h3>
+                    <p class="meta"><strong>Engine:</strong> Unity</p>
+                    <p class="meta"><strong>Team Size:</strong> 5 คน</p>
+                    <p class="meta"><strong>Roles:</strong> Game Director, Lead Programmer</p>
+                    <h4>Responsibilities:</h4>
+                    <ul>
+                        <li>กำหนดวิสัยทัศน์และทิศทางการพัฒนาเกม</li>
+                        <li>ออกแบบ Gameplay หลักและ Mechanics</li>
+                        <li>เขียนระบบหลักในเกม (2D movement, AI Enemy, Game Manager)</li>
+                        <li>ประสานงานทีม Art และ Programmer ให้สอดคล้องกับแนวเกม Horror</li>
+                    </ul>
+                    <h4>What I Learned:</h4>
+                    <ul>
+                        <li>ได้เรียนรู้การสื่อสารไอเดียให้ทีมเข้าใจตรงกัน, การแก้ conflict และตัดสินใจที่ส่งผลต่อทั้งเกม</li>
+                        <li>ฝึกการเขียนโค้ดที่ reusable, ทำงานกับ Prefab, Scene management, Event system</li>
+                    </ul>
+                    <a href="https://twitytwo.itch.io/piano" target="_blank" class="btn-project-link"><i class="fas fa-globe"></i> View Project</a>
+                </div>
+            </div>
+
+            <div id="shrine-showdown" class="game-project-card" onmouseover="loadGif(this)" onmouseleave="unloadGif(this)">
+                <div class="project-media-left">
+                    <img src="Featured Projects/Shrine Showdown.png" alt="Shrine Showdown Cover Image" class="project-static-image" loading="lazy">
+                    <img data-gif-src="Featured Projects/Shrine Showdown.gif" alt="Shrine Showdown Highlight GIF" class="project-gif-image" loading="lazy">
+                </div>
+                <div class="project-details-right">
+                    <h3>Shrine Showdown</h3>
+                    <p class="meta"><strong>Engine:</strong> Unity</p>
+                    <p class="meta"><strong>Team Size:</strong> 3 คน</p>
+                    <p class="meta"><strong>Roles:</strong> 3D Modeling, Online System Developer</p>
+                    <h4>Responsibilities:</h4>
+                    <ul>
+                        <li>ออกแบบและสร้าง โมเดล 3 มิติของฉากและวัตถุ เพื่อให้ได้บรรยากาศสไตล์ไทย</li>
+                        <li>พัฒนา ระบบมัลติเพลเยอร์ออนไลน์ ด้วย Unity Netcode</li>
+                        <li>เขียนระบบเชื่อมต่อกับผู้เล่น เช่น ระบบยิง การคำนวณความเสียหาย และการเกิดของซอมบี้ ให้ทำงานบนเครือข่าย</li>
+                    </ul>
+                    <h4>What I Learned:</h4>
+                    <ul>
+                        <li>การทำงานด้าน 3D Modeling และการเข้าใจการใช้ Unity Netcode Client-Server</li>
+                    </ul>
+                    <a href="https://twitytwo.itch.io/shrine-showdown" target="_blank" class="btn-project-link"><i class="fas fa-globe"></i> View Project</a>
+                </div>
+            </div>
+
+            <div id="bubble-ko" class="game-project-card" onmouseover="loadGif(this)" onmouseleave="unloadGif(this)">
+                <div class="project-media-left">
+                    <img src="Featured Projects/BubbleKO.png" alt="Bubble KO Cover Image" class="project-static-image" loading="lazy">
+                    <img data-gif-src="Featured Projects/BubbleKO.gif" alt="Bubble KO Highlight GIF" class="project-gif-image" loading="lazy">
+                </div>
+                <div class="project-details-right">
+                    <h3>Bubble KO (KMUTT Game Jam)</h3>
+                    <p class="meta"><strong>Engine:</strong> Unity</p>
+                    <p class="meta"><strong>Team Size:</strong> 3 คน</p>
+                    <p class="meta"><strong>Roles:</strong> 3D Modeling, Split-Screen Developer</p>
+                    <h4>Responsibilities:</h4>
+                    <ul>
+                        <li>ออกแบบและสร้าง โมเดล 3 มิติ ของฉากและวัตถุในเกม ให้เข้ากับสไตล์เกมแคชชวลสดใส</li>
+                        <li>พัฒนา ระบบ Split-Screen ให้ผู้เล่น 2 คนสามารถเล่นพร้อมกันบนจอเดียว</li>
+                        <li>เขียนระบบกล้องและ UI ให้รองรับการแบ่งจอ โดยไม่รบกวนการมองเห็นของผู้เล่นแต่ละฝ่าย</li>
+                    </ul>
+                    <h4>What I Learned:</h4>
+                    <ul>
+                        <li>ฝึกการสร้าง โมเดล 3D low-poly สำหรับเกมแคชชวลที่ต้องการความลื่นไหล</li>
+                        <li>เรียนรู้การพัฒนา ระบบ Split-Screen ทั้งด้านกล้อง การควบคุมผู้เล่น และการแสดงผล UI</li>
+                        <li>เข้าใจการแก้ไขปัญหา Collision และ Interaction ระหว่างผู้เล่นในระบบ PvP</li>
+                        <li>ได้ทักษะการทำงานเป็นทีมในงาน Game Jam ภายใต้เวลาจำกัด ทั้งด้านการประสานงานและการตัดสินใจร่วมกัน</li>
+                    </ul>
+                    <a href="https://globalgamejam.org/games/2025/bubble-ko-7" target="_blank" class="btn-project-link"><i class="fas fa-globe"></i> View Project</a>
+                </div>
+            </div>
+
+            <div id="mr-stoker" class="game-project-card" onmouseover="loadGif(this)" onmouseleave="unloadGif(this)">
+                <div class="project-media-left">
+                    <img src="Featured Projects/MR.Stoker.png" alt="Mr. Stoker Cover Image" class="project-static-image" loading="lazy">
+                    <img data-gif-src="Featured Projects/MR.Stoker.gif" alt="Mr. Stoker Highlight GIF" class="project-gif-image" loading="lazy">
+                </div>
+                <div class="project-details-right">
+                    <h3>Mr. Stoker</h3>
+                    <p class="meta"><strong>Engine:</strong> Unity</p>
+                    <p class="meta"><strong>Team Size:</strong> 3 คน</p>
+                    <p class="meta"><strong>Roles:</strong> Virtual Reality Developer (VR)</p>
+                    <h4>Responsibilities:</h4>
+                    <ul>
+                        <li>กำหนดทิศทางและ โทนของเกม VR Horror ให้ผู้เล่นรู้สึกกดดันและหวาดกลัว</li>
+                        <li>พัฒนา ระบบ VR Interaction ใน Unity ให้ผู้เล่นเดินสำรวจ และเปิดปฏิสัมพันธ์กับสิ่งแวดล้อม</li>
+                        <li>ออกแบบ AI ของ Stoker ให้สามารถไล่ล่าและสร้างความรู้สึกกดดันแบบต่อเนื่อง</li>
+                        <li>สร้างสภาพแวดล้อม หอพักและหมู่บ้านชนบทไทย เช่น ร้านค้าและตึก เพื่อให้เกิดบรรยากาศสมจริง</li>
+                    </ul>
+                    <h4>What I Learned:</h4>
+                    <ul>
+                        <li>เข้าใจการพัฒนาเกม VR Horror ที่เน้นอารมณ์และบรรยากาศเป็นหลัก</li>
+                        <li>ฝึกการสร้าง AI stalker system เรียนรู้การใช้ เสียงและการออกแบบเสียง เพื่อกระตุ้นปฏิกิริยาทางอารมณ์ของผู้เล่น</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="horror-game" class="game-project-card" onmouseover="loadGif(this)" onmouseleave="unloadGif(this)">
+                <div class="project-media-left">
+                    <img src="Featured Projects/OURHOME.png" alt="Horror Game Project Cover Image" class="project-static-image" loading="lazy">
+                    <img data-gif-src="Featured Projects/OURHOME.gif" alt="Horror Game Project Highlight GIF" class="project-gif-image" loading="lazy">
+                </div>
+                <div class="project-details-right">
+                    <h3>Horror Game Project</h3>
+                    <p class="meta"><strong>Engine:</strong> Unity</p>
+                    <p class="meta"><strong>Team Size:</strong> 1 (Solo Developer)</p>
+                    <p class="meta"><strong>Roles:</strong> Solo Developer</p>
+                    <h4>Responsibilities:</h4>
+                    <ul>
+                        <li>ออกแบบแนวคิดและ Gameplay สาย Survival Horror ให้ผู้เล่นเอาตัวรอดในบรรยากาศหลอน</li>
+                        <li>พัฒนาเกมด้วย Unity ครอบคลุมทั้ง ระบบการเล่น, AI ศัตรู, อินเทอร์เฟซ</li>
+                    </ul>
+                    <h4>What I Learned:</h4>
+                    <ul>
+                        <li>เข้าใจวงจรการทำเกมตั้งแต่ Pre-production → Production → Testing ทุกด้านทั้ง Art, Design, Programming</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="mobile-game" class="game-project-card mobile-layout" onmouseover="loadGif(this)" onmouseleave="unloadGif(this)">
+                <div class="project-media-left">
+                    <img src="Featured Projects/กุ้งเผา.png" alt="กุ้งเผาอยุธยา Cover Image" class="project-static-image" loading="lazy">
+                    <img data-gif-src="Featured Projects/กุ้งเผา.gif" alt="กุ้งเผาอยุธยา Highlight GIF" class="project-gif-image" loading="lazy">
+                </div>
+                <div class="project-details-right">
+                    <h3>กุ้งเผาอยุธยา (Mobile Game Project)</h3>
+                    <p class="meta"><strong>Engine:</strong> Unity</p>
+                    <p class="meta"><strong>Team Size:</strong> 1 คน</p>
+                    <p class="meta"><strong>Roles:</strong> Solo Developer</p>
+                    <h4>Responsibilities:</h4>
+                    <ul>
+                        <li>พัฒนา Gameplay แนว สุ่มเลือกทหาร (Random Unit) แล้วส่งไปต่อสู้กับกุ้ง</li>
+                        <li>ออกแบบระบบ ADS / Monetization เพื่อสร้างรายได้ภายในเกม</li>
+                        <li>พัฒนา UI/UX ให้เหมาะกับเกมมือถือ เล่นง่าย ใช้เวลาสั้น ๆ</li>
+                        <li>การนำเกมลง Google Play Store</li>
+                    </ul>
+                    <h4>What I Learned:</h4>
+                    <ul>
+                        <li>กระบวนการทำ Mobile Game และการลงสโตร์จริง</li>
+                        <li>ประสบการณ์ด้าน โฆษณาในเกม</li>
+                        <li>การออกแบบระบบสุ่มและสมดุลระหว่างยูนิต/ศัตรู</li>
+                        <li>ฝึกการทำงาน แบบครบวงจรคนเดียว ตั้งแต่ Art, Code, Publish</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kanchit Kinsrisuk. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function loadGif(card) {
+            const gifImg = card.querySelector('.project-gif-image');
+            const staticImg = card.querySelector('.project-static-image');
+            const gifSrc = gifImg.getAttribute('data-gif-src');
+            if (!gifImg.src || gifImg.src.indexOf('data-gif-src') === -1) { 
+                gifImg.src = gifSrc; 
+            }
+            staticImg.style.opacity = '0';
+            gifImg.style.opacity = '1';
+        }
+        function unloadGif(card) {
+            const gifImg = card.querySelector('.project-gif-image');
+            const staticImg = card.querySelector('.project-static-image');
+            staticImg.style.opacity = '1';
+            gifImg.style.opacity = '0';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio of Kanchit Kinsrisuk, Game Developer">
+    <meta name="keywords" content="Game Developer, Unity, Unreal Engine, 3D, Blender, Maya, Game Design">
+    <meta name="author" content="Kanchit Kinsrisuk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Kanchit Kinsrisuk | Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Kanchit Kinsrisuk</h1>
+            <p class="subtitle">Game Developer Portfolio</p>
+            <nav>
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> HOME</a>
+                <a href="#about" class="nav-link"><i class="fas fa-user"></i> ABOUT ME</a>
+                <a href="game-development.html" class="nav-link"><i class="fas fa-gamepad"></i> GAME PROJECT</a>
+                <a href="OtherWorks.html" class="nav-link"><i class="fas fa-palette"></i> OTHER WORKS</a>
+                <a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> EXPERIENCE</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <section id="featured-projects" class="section-container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                
+                <a href="game-development.html#piano" class="project-card-link" 
+                   onmouseover="loadGif(this.querySelector('.project-card'))" 
+                   onmouseleave="unloadGif(this.querySelector('.project-card'))">
+                    <div class="project-card">
+                        <img src="Featured Projects/Piano.png" alt="Piano Cover" class="project-static-image">
+                        <img data-gif-src="Featured Projects/Piano.gif" alt="Piano Highlight" class="project-gif-image">
+                        <div class="project-info">
+                            <h3>Piano</h3>
+                            <p class="role">Game Director, Lead Programmer</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="OtherWorks.html#lighting" class="project-card-link"
+                   onmouseover="loadGif(this.querySelector('.project-card'))" 
+                   onmouseleave="unloadGif(this.querySelector('.project-card'))">
+                    <div class="project-card">
+                        <img src="Featured Projects/ห้องพระ.png" alt="HDRP Lighting Cover" class="project-static-image">
+                        <img data-gif-src="Featured Projects/ห้องพระ.gif" alt="HDRP Lighting Highlight" class="project-gif-image">
+                        <div class="project-info">
+                            <h3>HDRP Lighting: ห้องพระ</h3>
+                            <p class="role">Lighting & Scene Composition</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="game-development.html#shrine-showdown" class="project-card-link"
+                   onmouseover="loadGif(this.querySelector('.project-card'))" 
+                   onmouseleave="unloadGif(this.querySelector('.project-card'))">
+                    <div class="project-card">
+                        <img src="Featured Projects/Shrine Showdown.png" alt="Shrine Showdown Cover" class="project-static-image">
+                        <img data-gif-src="Featured Projects/Shrine Showdown.gif" alt="Shrine Showdown Highlight" class="project-gif-image">
+                        <div class="project-info">
+                            <h3>Shrine Showdown</h3>
+                            <p class="role">3D Modeling, Online System Developer</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="game-development.html#horror-game" class="project-card-link"
+                   onmouseover="loadGif(this.querySelector('.project-card'))" 
+                   onmouseleave="unloadGif(this.querySelector('.project-card'))">
+                    <div class="project-card">
+                        <img src="Featured Projects/OURHOME.png" alt="OUR HOME Cover" class="project-static-image">
+                        <img data-gif-src="Featured Projects/OURHOME.gif" alt="OUR HOME Highlight" class="project-gif-image">
+                        <div class="project-info">
+                            <h3>Horror Game Project</h3>
+                            <p class="role">Solo Developer</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="game-development.html#bubble-ko" class="project-card-link"
+                   onmouseover="loadGif(this.querySelector('.project-card'))" 
+                   onmouseleave="unloadGif(this.querySelector('.project-card'))">
+                    <div class="project-card">
+                        <img src="Featured Projects/BubbleKO.png" alt="Bubble KO Cover" class="project-static-image">
+                        <img data-gif-src="Featured Projects/BubbleKO.gif" alt="Bubble KO Highlight" class="project-gif-image">
+                        <div class="project-info">
+                            <h3>Bubble KO</h3>
+                            <p class="role">3D Modeling, Split-Screen Developer</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="game-development.html#mr-stoker" class="project-card-link"
+                   onmouseover="loadGif(this.querySelector('.project-card'))" 
+                   onmouseleave="unloadGif(this.querySelector('.project-card'))">
+                    <div class="project-card">
+                        <img src="Featured Projects/MR.Stoker.png" alt="MR. Stoker Cover" class="project-static-image">
+                        <img data-gif-src="Featured Projects/MR.Stoker.gif" alt="MR. Stoker Highlight" class="project-gif-image">
+                        <div class="project-info">
+                            <h3>Mr. Stoker</h3>
+                            <p class="role">Virtual Reality Developer (VR)</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+            <div class="view-more-container">
+                <a href="game-development.html" class="btn-view-more">View More</a>
+            </div>
+        </section>
+
+        <section id="about" class="section-container">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-left">
+                    <div class="profile-card">
+                        <img src="Pic/Proflie_PIC.jpg" alt="Kanchit Kinsrisuk" class="about-pic">
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone-alt"></i> <strong>Contact:</strong> 099-087-1199</p>
+                            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> kanfrankchot@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="skills-card">
+                        <h3>Skills & Tools</h3>
+                        <div id="tool-icons">
+                            <img src="Pic/Blender_logo_no_text.svg.png" alt="Blender Logo" />
+                            <img src="Pic/RobloxStudio.png" alt="RobloxStudio Pro Logo" />
+                            <img src="Pic/unity.png" alt="Unity Logo" />
+                            <img src="Pic/Unreal_Engine_Logo.svg.png" alt="Unreal Engine Logo" />
+                            <img src="Pic/Maya.webp" alt="Maya Logo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                        I’m Kanchit Kinsrisuk (Frank), a 4th-year student at King Mongkut’s University of Technology Thonburi (KMUTT), majoring in Game Development under the Media Technology program.
+                    </p>
+                    <p>
+                        My main interests are story-driven games with Thai identity, horror games, and co-op experiences that bring laughter and connection when playing with friends.
+                    </p>
+                    <p>
+                        My goal is to create high-quality games that are affordable and accessible for everyone, bringing Thai-inspired experiences to the global stage.
+                    </p>
+
+                    <div id="experience-section">
+    <h2>Work Experience</h2>
+    <div class="exp-list">
+        <a href="experience.html#dsil-pr-marketing" class="exp-card-link">
+            <div class="exp-card">
+                <img src="Pic/darunsikkhalai.jpg" alt="Darunsikkhalai School Logo">
+                <div class="exp-meta">
+  <h3>Darunsikkhalai School</h3>
+  <p>2023 – 2025</p>
+  <p>PR & Marketing</p>
+                </div>
+            </div>
+        </a>
+        <a href="experience.html#gamedoubled-ta" class="exp-card-link">
+            <div class="exp-card">
+                <img src="Pic/gamedoubled.png" alt="GameDoubleD Logo">
+                <div class="exp-meta">
+                    <h3>GameDoubleD School</h3>
+                    <p>2025 – Present</p> 
+                    <p>Teaching Assistant</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kanchit Kinsrisuk. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function loadGif(card) {
+            // ค้นหาแท็ก GIF ภายใน project-card ที่กำลังถูกชี้
+            const gifImg = card.querySelector('.project-gif-image');
+            const staticImg = card.querySelector('.project-static-image');
+            const gifSrc = gifImg.getAttribute('data-gif-src');
+            
+            // ถ้า GIF ยังไม่มี src (ยังไม่เคยโหลด) ให้เริ่มโหลด
+            if (!gifImg.src || gifImg.src.indexOf('data-gif-src') === -1) { 
+                gifImg.src = gifSrc; 
+            }
+
+            // แสดง GIF และซ่อนภาพนิ่ง
+            staticImg.style.opacity = '0';
+            gifImg.style.opacity = '1';
+        }
+
+        function unloadGif(card) {
+            // ซ่อน GIF และแสดงภาพนิ่งคืน
+            const gifImg = card.querySelector('.project-gif-image');
+            const staticImg = card.querySelector('.project-static-image');
+            
+            staticImg.style.opacity = '1';
+            gifImg.style.opacity = '0';
+        }
+    </script>
+</body>
+</html>

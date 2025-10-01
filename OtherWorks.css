@@ -1,0 +1,130 @@
+/*
+    otherworks.css
+    Styles specific to the Other Works Page
+*/
+
+:root {
+    --primary-color: #3f51b5;
+    --text-color-dark: #2c3e50;
+    --text-color-light: #555;
+    --bg-light: #f4f7f9;
+    --card-bg: #ffffff;
+    --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#other-works-section .section-container {
+    padding: 40px 20px;
+    background: var(--bg-light);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#other-works-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+/* Works Grid: Two columns of cards */
+.works-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 30px;
+}
+
+.work-category-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+}
+
+.work-category-card h3 {
+    color: var(--text-color-dark);
+    font-size: 1.8em;
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.work-category-card h3 i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.work-category-card .description {
+    color: var(--text-color-light);
+    font-size: 1em;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Image Gallery within each card */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default 3 รูปต่อแถว (Lighting) */
+    gap: 15px;
+}
+
+/* Styles for specific layouts */
+.image-gallery.four-cols {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 3D Modeling */
+}
+
+.image-gallery.two-cols {
+    grid-template-columns: repeat(2, 1fr); /* System Design */
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+/* ===== NEW: Style for 2-column center alignment (for AR) ===== */
+/* ใช้คลาส .image-gallery เดิม แต่ตั้งค่าให้มี 2 คอลัมน์และอยู่ตรงกลาง */
+/* เราจะนำคลาสนี้ไปใส่ในส่วน AR ใน HTML แทนที่จะใช้ .image-gallery ธรรมดา */
+.image-gallery.two-cols-center {
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 600px; /* กำหนดความกว้างเท่ากับ System Design */
+    margin: 0 auto; /* จัดกึ่งกลาง */
+}
+
+.work-img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.work-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Responsive */
+@media (min-width: 768px) {
+    .works-grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+@media (max-width: 767px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 รูปต่อแถวบนมือถือ */
+    }
+    
+    .image-gallery.two-cols,
+    .image-gallery.two-cols-center { /* ปรับให้ใช้กับคลาส AR ด้วย */
+        grid-template-columns: 1fr; /* 1 รูปต่อแถวสำหรับ 2-cols บนมือถือ */
+        max-width: none;
+    }
+    
+    .work-img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 500px) {
+    .image-gallery, .image-gallery.four-cols {
+        grid-template-columns: 1fr; 
+    }
+}
