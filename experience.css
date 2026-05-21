@@ -70,74 +70,100 @@
 /* ===== Work History Styling (Right Column) ===== */
 .experience-item {
     background: var(--card-bg);
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: var(--shadow-light);
-    margin-bottom: 30px;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    margin-bottom: 35px;
+    border-left: 5px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    box-shadow: 0 8px 24px rgba(63, 81, 181, 0.12);
+    transform: translateX(4px);
 }
 
 .logo-and-title {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    gap: 15px;
 }
 
 .company-logo {
-    width: 50px;
-    height: 50px;
-    object-fit: contain; 
-    margin-right: 15px;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    padding: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover .company-logo {
+    transform: scale(1.08);
 }
 
 .experience-item h3 {
     color: var(--primary-color);
-    font-size: 1.6em;
+    font-size: 1.55em;
     margin: 0;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 .duration {
-    font-weight: 600;
-    color: var(--text-color-light);
-    margin-top: -5px;
-    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 0.98em;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
 }
 
 .experience-item h4 {
     color: var(--text-color-dark);
     font-size: 1.1em;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin-top: 18px;
+    margin-bottom: 12px;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .experience-item ul {
     list-style: disc;
-    padding-left: 20px;
-    font-size: 0.95em;
-    line-height: 1.6;
+    padding-left: 24px;
+    font-size: 0.98em;
+    line-height: 1.8;
     color: var(--text-color-light);
+    margin: 10px 0;
+}
+
+.experience-item ul li {
+    margin: 8px 0;
 }
 
 /* Activity Gallery Section (ด้านล่างสุดของคอลัมน์ขวา) */
 .activity-gallery {
     margin-top: 40px; 
-    padding: 0 25px; 
+    padding: 0;
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
 }
 
 .activity-img {
     width: 100%;
-    height: 150px; 
+    height: 160px;
     object-fit: cover;
-    border-radius: 8px;
-    box-shadow: var(--shadow-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Responsive */

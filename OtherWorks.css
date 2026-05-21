@@ -36,15 +36,24 @@
     background: var(--card-bg);
     padding: 30px;
     border-radius: 12px;
-    box-shadow: var(--shadow-light);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.work-category-card:hover {
+    box-shadow: 0 8px 24px rgba(63, 81, 181, 0.12);
+    transform: translateX(4px);
 }
 
 .work-category-card h3 {
     color: var(--text-color-dark);
     font-size: 1.8em;
     border-bottom: 3px solid var(--primary-color);
-    padding-bottom: 10px;
-    margin-bottom: 15px;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 .work-category-card h3 i {
@@ -56,7 +65,8 @@
     color: var(--text-color-light);
     font-size: 1em;
     margin-bottom: 25px;
-    line-height: 1.5;
+    line-height: 1.7;
+    font-weight: 500;
 }
 
 /* Image Gallery within each card */
@@ -90,13 +100,14 @@
     width: 100%;
     height: 180px; 
     object-fit: cover;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .work-img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(63, 81, 181, 0.18);
 }
 
 
