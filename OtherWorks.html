@@ -83,5 +83,91 @@
     <footer>
         <p>&copy; 2025 Kanchit Kinsrisuk. All Rights Reserved.</p>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" src="" alt="">
+        <div class="lightbox-nav">
+            <button class="lightbox-prev">❮ Previous</button>
+            <button class="lightbox-next">Next ❯</button>
+        </div>
+    </div>
+
+    <script>
+        // Lightbox Functionality
+        const modal = document.getElementById('lightbox-modal');
+        const lightboxImage = document.querySelector('.lightbox-image');
+        const closeBtn = document.querySelector('.lightbox-close');
+        const prevBtn = document.querySelector('.lightbox-prev');
+        const nextBtn = document.querySelector('.lightbox-next');
+        
+        let currentImageIndex = 0;
+        let allImages = [];
+
+        // Get all images
+        function getAllImages() {
+            allImages = Array.from(document.querySelectorAll('.work-img'));
+        }
+
+        // Open lightbox
+        function openLightbox(img) {
+            getAllImages();
+            currentImageIndex = allImages.indexOf(img);
+            lightboxImage.src = img.src;
+            lightboxImage.alt = img.alt;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close lightbox
+        function closeLightbox() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Show previous image
+        function showPrevious() {
+            currentImageIndex = (currentImageIndex - 1 + allImages.length) % allImages.length;
+            lightboxImage.src = allImages[currentImageIndex].src;
+            lightboxImage.alt = allImages[currentImageIndex].alt;
+        }
+
+        // Show next image
+        function showNext() {
+            currentImageIndex = (currentImageIndex + 1) % allImages.length;
+            lightboxImage.src = allImages[currentImageIndex].src;
+            lightboxImage.alt = allImages[currentImageIndex].alt;
+        }
+
+        // Add click event to all images
+        document.querySelectorAll('.work-img').forEach(img => {
+            img.addEventListener('click', function() {
+                openLightbox(this);
+            });
+            img.style.cursor = 'pointer';
+        });
+
+        // Event listeners for modal controls
+        closeBtn.addEventListener('click', closeLightbox);
+        prevBtn.addEventListener('click', showPrevious);
+        nextBtn.addEventListener('click', showNext);
+
+        // Close modal when clicking outside image
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeLightbox();
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (modal.style.display === 'flex') {
+                if (event.key === 'ArrowLeft') showPrevious();
+                if (event.key === 'ArrowRight') showNext();
+                if (event.key === 'Escape') closeLightbox();
+            }
+        });
+    </script>
 </body>
 </html>
